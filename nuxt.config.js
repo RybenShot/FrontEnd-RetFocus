@@ -51,7 +51,7 @@ export default {
   },
 
   env: {
-    baseURL: 'http://localhost:8080'
+    baseURL: 'https://retfocus-back.herokuapp.com/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
