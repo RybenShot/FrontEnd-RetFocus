@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="" id="bgIndex">
     <!-- <navbar></navbar> -->
 
     <nuxt />
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style>
-body {
+#bgIndex {
     background: url(https://i.ibb.co/ZT1msqx/background-alone.png) no-repeat center /cover;
 }
 </style>

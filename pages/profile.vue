@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <div class="columns is-mobile" style="padding-top: 45px">
+      <div class="columns is-mobile" style="padding-top: 35px">
         <!-- v-for="item in posts" :key="item._id" -->
 
         <div class="column " style="padding-right: 0px">
@@ -28,7 +28,7 @@
             {{ currentUser.email }}
           </p>
           <!-- <b-button type="is-danger"><a href="#" @click="logout" >Logout</a></b-button> -->
-          <div id="logoutbox">
+          <div id="logoutbox" >
             <b-button
               class="has-text-centered"
               type="is-danger"
@@ -37,6 +37,8 @@
               <a id="logout" href="#" @click="logout">Logout</a></b-button
             >
           </div>
+
+
         </div>
 
         <!-- <div class="media">
@@ -151,7 +153,8 @@ hr {
 }
 #imgProfile {
   padding-bottom: 0px;
-  padding-left: 30px;
+  padding-left: 40px;
+  padding-right: 0px;
   width: 150px;
 }
 #email {
@@ -161,10 +164,12 @@ hr {
   color: white;
 }
 #logoutbox {
-  margin-left: 0px;
+  margin-left: 60px;
 }
 #DataUser {
-  padding-top: 50px;
+  padding-top:40px;
   padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 30px;
 }
 </style>

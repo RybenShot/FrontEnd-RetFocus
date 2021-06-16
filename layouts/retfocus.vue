@@ -1,5 +1,5 @@
 <template>
-  <div class="is-widescreen">
+  <div class="container is-widescreen">
 
 
     <nuxt />
