@@ -1,6 +1,18 @@
 <template>
-  <div class="container is-max-desktop" >
+  <div class="container is-max-desktop">
     <div class="notification is-success" id="formpost">
+      <div style="padding-left: 45px;">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://assets4.lottiefiles.com/packages/lf20_qm8eqzse.json"
+        background="transparent"
+        speed="1"
+        style="width: 200px; height: 200px"
+        loop
+        autoplay
+      ></lottie-player>
+</div>
+
       <b-field label="Titulo">
         <b-input
           type="text"
@@ -12,15 +24,15 @@
       <b-field label="Enlace de video">
         <b-input
           type="text"
-          placeholder="Aqui ira la url del video que se quiera subir"
+          placeholder="ID del video de youtube"
           v-model="postData.url"
         ></b-input>
       </b-field>
 
-      <b-field label="Descripcion">
+      <b-field label="Resume">
         <b-input
           type="text"
-          placeholder="Pequeña descripcion de su cortometraje ..."
+          placeholder="Pequeño resumen del corto"
           v-model="postData.description"
         ></b-input>
       </b-field>
@@ -42,9 +54,7 @@
       </b-field> -->
 
       <b-field>
-        <p>
-          Pulsa para enviar el post
-        </p>
+        <p>Pulsa para enviar el post</p>
         <b-button type="is-warning" expanded @click="newPost">Enviar</b-button>
       </b-field>
     </div>
@@ -52,24 +62,23 @@
 </template>
 
 <script>
-
 export default {
   name: "post",
-    layout: "retfocus",
-  middleware: 'authenticated',
+  layout: "retfocus",
+  middleware: "authenticated",
 
-    data() {
+  data() {
     return {
       postData: {
         title: "",
         url: "",
         description: "",
         image: "",
-        tag: ""
+        tag: "",
       },
     };
   },
-    methods: {
+  methods: {
     async newPost() {
       try {
         // volvemos a capturar las variables que vamos a registrar. Nose paque ...
@@ -80,10 +89,13 @@ export default {
           image: this.postData.image,
           tag: this.postData.tag,
         };
-// Y lo enviamos al plugin a traves de $api con el "register" y con los datos que enviamos
-        await this.$api.posts.registerPost(newPostData,this.$store.getters.token);
+        // Y lo enviamos al plugin a traves de $api con el "register" y con los datos que enviamos
+        await this.$api.posts.registerPost(
+          newPostData,
+          this.$store.getters.token
+        );
 
-        console.log("Post Subido con exito! espero ...")
+        console.log("Post Subido con exito! espero ...");
 
         this.$router.push("/profile"); //Redireccion a intro
       } catch (error) {
@@ -95,9 +107,8 @@ export default {
 </script>
 
 <style>
-#formpost{
-
-margin: 15px;
-height: 600px
+#formpost {
+  margin: 15px;
+  margin-top: 50px;
 }
 </style>

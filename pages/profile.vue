@@ -4,13 +4,18 @@
       <div class="columns is-mobile" style="padding-top: 35px">
         <!-- v-for="item in posts" :key="item._id" -->
 
-        <div class="column " style="padding-right: 0px">
+        <div class="column " >
           <div class="column" id="imgProfile">
-            <figure class="image">
-              <img
+            <figure class="image ">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player
                 class="is-rounded"
-                src="https://i.ibb.co/C1ZB9S3/72510466.jpg"
+                src="https://assets9.lottiefiles.com/private_files/lf30_qunyZE.json"
+                background="transparent"  speed="1"
+                loop  autoplay
               />
+
+<!-- <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_qunyZE.json"    style="width: 300px; height: 300px;"  ></lottie-player> -->
             </figure>
           </div>
         </div>

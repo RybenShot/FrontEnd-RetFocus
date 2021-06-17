@@ -28,7 +28,7 @@
       <!-- No tienes cuenta? -->
       <div class="columns is-mobile">
         <div class="column">
-          <h4 class="bd-notification is-info">Not Have Account?</h4>
+          <h4 class="bd-notification is-info">Don't have an account?</h4>
         </div>
         <div class="column">
           <b-button

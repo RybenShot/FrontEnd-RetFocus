@@ -4,7 +4,7 @@
       <AlluserPost v-for="item in posts" :value="item" :key="item._id" />
     </figure>
 
-    <div class="card">
+    <!-- <div class="card">
       <div class="card-content">
         <div class="columns is-mobile">
           <div class="column is-one-quarter">
@@ -23,7 +23,7 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <hr>
     <hr>
@@ -81,6 +81,8 @@ export default {
 }
 #videoYoutube {
   margin-bottom: 5px;
+  padding-bottom: 30px;
+
 }
 .card-content {
   padding-bottom: 5px;

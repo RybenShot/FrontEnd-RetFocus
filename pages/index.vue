@@ -7,7 +7,7 @@
     <b-button active expanded tag="router-link" :to="{ path: '/login' }"><strong> Login </strong></b-button>
     <!-- No tienes cuenta? -->
     <div class="columns is-mobile">
-      <div class="column"><h4 class="bd-notification is-info">Not Have Account?</h4></div>
+      <div class="column"><h4 class="bd-notification is-info">Don't have an account?</h4></div>
       <div class="column"><b-button class="bd-notification" type="is-dark" tag="router-link" :to="{ path: '/register' }">Register</b-button></div>
     </div>
   </div>

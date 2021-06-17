@@ -12,6 +12,17 @@ class User{
             throw error
         }
     }
+
+    async findById(userId){
+      try {
+
+          const response = await this.axios.get(`users/${userId}`);
+          return response.data
+      } catch (error) {
+          throw error
+      }
+
+  }
 }
 
 export default User
