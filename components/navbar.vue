@@ -1,11 +1,8 @@
 <template>
   <footer class="block" id="bgNavbar">
-    <!-- Acciones -->
-
     <div class="columns is-gapless is-mobile">
-
+      <!-- Boton izquierdo -->
       <div class="column mobile-modal">
-
         <b-button
         id="buttoms-navbar"
           tag="router-link"
@@ -18,14 +15,8 @@
           </div>
           </b-button>
       </div>
-
+      <!-- Boton central -->
       <div class="column">
-        <!-- <figure class="image is-128x128">
-          <img src="https://i.ibb.co/PG3pr58/pngtree-home-vector-icon-png-image-4236634.jpg" />
-        </figure> -->
-
-        <!-- <a href="https://ibb.co/60Vhy45"><img src="https://i.ibb.co/PG3pr58/pngtree-home-vector-icon-png-image-4236634.jpg" alt="pngtree-home-vector-icon-png-image-4236634" border="0"></a> -->
-
         <b-button
           id="buttoms-navbar"
           tag="router-link"
@@ -38,7 +29,7 @@
           </div>
         </b-button>
       </div>
-
+      <!-- Boton derecho -->
       <div class="column">
         <b-button
           id="buttoms-navbar"
@@ -50,10 +41,7 @@
           <div class="comuns">
             <img id="icons" src="https://i.ibb.co/wywx4Qw/perfil.png"/>
           </div>
-          </b-button
-
-        >
-        <!-- <a href="https://ibb.co/D48SQM8"><img src="https://i.ibb.co/wywx4Qw/perfil.png" alt="perfil" border="0"></a> -->
+          </b-button>
       </div>
     </div>
   </footer>

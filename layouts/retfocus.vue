@@ -1,9 +1,7 @@
 <template>
   <div class="container is-widescreen">
-
-
     <nuxt />
-<logoRet />
+    <logoRet />
     <navbar />
   </div>
 </template>
@@ -17,10 +15,6 @@ export default {
     navbar,
     logoRet,
   },
-  // mounted() {
-  //   const token = this.$cookies.get("jwt-token");
-  //   this.$store.dispatch("login", token);
-  // },
 };
 </script>
 

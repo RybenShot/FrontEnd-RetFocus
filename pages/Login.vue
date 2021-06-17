@@ -1,43 +1,25 @@
 <template>
   <div class="columns is-mobile alcentrologin">
-    <div
-      class="column is-three-fifths is-offset-one-fifth mt-6"
-      id="logincenter"
-    >
+    <div class="column is-three-fifths is-offset-one-fifth mt-6" id="logincenter">
       <!-- Logo -->
-      <a href="/#"
-        ><figure class="image"><img src="../assets/buefy.png" alt="" /></figure
-      ></a>
+      <a href="/#"><figure><img src="../assets/buefy.png"/></figure></a>
       <!-- Formulario -->
       <div class="field">
         <input class="input" type="email" placeholder="Email" v-model="email" />
       </div>
 
       <div class="field">
-        <input
-          class="input"
-          type="password"
-          placeholder="Password"
-          v-model="password"
-        />
+        <input class="input" type="password" placeholder="Password" v-model="password"/>
       </div>
       <!-- Boton de login -->
-      <b-button active expanded class="mb-3" @click="login"
-        ><strong> Login </strong></b-button
-      >
+      <b-button active expanded class="mb-3" @click="login"><strong> Login </strong></b-button>
       <!-- No tienes cuenta? -->
       <div class="columns is-mobile">
         <div class="column">
-          <h4 class="bd-notification is-info">Don't have an account?</h4>
+          <h4>Don't have an account?</h4>
         </div>
         <div class="column">
-          <b-button
-            class="bd-notification"
-            type="is-dark"
-            tag="router-link"
-            :to="{ path: '/register' }"
-            >Register</b-button
-          >
+          <b-button class="bd-notification" type="is-dark" tag="router-link" :to="{ path: '/register' }" >Register</b-button>
         </div>
       </div>
     </div>

@@ -1,25 +1,29 @@
 <template>
   <div id="container-AllStar">
+    <!-- Parte de "en proceso" -->
     <section class="hero is-small is-info">
       <div class="hero-body">
-        <div style="padding-left: 60px;">
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player
-          src="https://assets8.lottiefiles.com/temp/lf20_CwlzoW.json"
-          background="transparent"
-          speed="1"
-          style="width: 200px; height: 200px padding-left: 30px;"
-          loop
-          autoplay
-        ></lottie-player>
+        <div style="padding-left: 60px">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets8.lottiefiles.com/temp/lf20_CwlzoW.json"
+            background="transparent"
+            speed="1"
+            style="width: 200px; height: 200px padding-left: 30px;"
+            loop
+            autoplay
+          ></lottie-player>
         </div>
         <p class="title has-text-centered">En proceso</p>
-        <p class="subtitle is-6 has-text-centered">Aqui tienes un pequeño ejemplo ...</p>
+        <p class="subtitle is-6 has-text-centered">
+          Aqui tienes un pequeño ejemplo ...
+        </p>
       </div>
     </section>
-
+    <!-- Demo de card Estrella -->
     <div class="card">
       <div id="postStar">
+        <!-- Repro de Youtube -->
         <div class="card-image">
           <figure class="image is-5by3">
             <iframe
@@ -32,7 +36,9 @@
             ></iframe>
           </figure>
         </div>
+        <!-- Datos del post -->
         <div class="card-content">
+          <!-- Parte superior de los datos -->
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
@@ -47,12 +53,12 @@
               <p class="subtitle is-6">@fernandito</p>
             </div>
           </div>
-
+          <!-- Parte de "descripcion" -->
           <div class="content">
             Aqui iria el resumen del cortometraje que habra puesto previamente a
             la hora de subir el post
             <br />
-
+            <!-- Parte de fecha ganador -->
             <p class="title is-4">
               <img
                 style="width: 30px"

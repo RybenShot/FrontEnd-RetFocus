@@ -2,11 +2,9 @@
   <div class="columns is-mobile" style="height: 700px">
     <div class="column is-three-fifths is-offset-one-fifth mt-6 alcentro" >
       <!-- Logo -->
-      <a href="/#"
-        ><figure class="image"><img src="../assets/buefy.png" alt="" /></figure
-      ></a>
-      <!-- Formulario -->
+      <a href="/#"><figure class="image"><img src="../assets/buefy.png" alt="" /></figure></a>
 
+      <!-- Formulario -->
       <div class="field">
         <input
           class="input"
@@ -42,26 +40,11 @@
           v-model="userData.nickName"
         />
       </div>
-
-<!-- Subida de fotos pero no entiendo muy bien como funciona -->
-      <!-- <b-field class="file">
-      <b-upload v-model="file" expanded>
-        <a class="button is-primary is-fullwidth">
-          <b-icon icon="upload"></b-icon><span>{{file.name || "Foto de perfil"}}</span>
-        </a>
-      </b-upload>
-    </b-field> -->
-
       <!-- Boton registro -->
-      <b-button active expanded @click="newUser"
-        ><strong> Registarse </strong></b-button
-      >
+      <b-button active expanded @click="newUser"><strong> Registarse </strong></b-button>
+
       <!-- Reglas de usuario -->
-      <div class="columns is-mobile">
-        <div class="column">
-          <h4 class="bd-notification is-info">Y a pasarlo bien!</h4>
-        </div>
-      </div>
+      <h4 class="has-text-centered">Y a pasarlo bien!</h4>
     </div>
   </div>
 </template>
@@ -108,10 +91,7 @@ export default {
 
 <style >
 .alcentro{
-
-    padding-top: 100px;
-
-
+  padding-top: 100px;
 }
 
 </style>

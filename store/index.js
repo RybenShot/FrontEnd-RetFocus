@@ -23,11 +23,7 @@ export const mutations = {
 }
 
 export const actions = {
-  // primer parámetro contexto de VUEX
-  // segundo parámetro contexto de NUXT
   nuxtServerInit(ctx, { app }) {
-
-    //sacamos la cookie de la petición
     const cookieToken = app.$cookies.get('jwt-token')
 
     if (cookieToken) {
@@ -45,20 +41,15 @@ export const actions = {
     }
 
     if (token) {
-      //localStorage.setItem("jwt-token", token)
       this.$cookies.set('jwt-token', token)
 
-      //configuro axios
       this.$api.initSession(token)
     }
-
     context.commit('saveToken', token)
   },
   logout(context) {
-    //localStorage.removeItem("jwt-token")
     this.$cookies.remove('jwt-token')
 
-    //configuro axios
     this.$api.closeSession()
 
     context.commit('saveToken')
@@ -66,7 +57,6 @@ export const actions = {
 }
 
 export const getters = {
-
   isAuth(state) {
     return state.token !== null
   },
@@ -76,5 +66,4 @@ export const getters = {
   currentUser(state) {
     return state.user
   },
-
 }

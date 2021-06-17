@@ -2,16 +2,22 @@
   <div class="block">
     <footer id="footer">
       <div id="head" class="columns is-mobile">
-
+        <!-- Boton de la izquierda -->
         <div class="column" id="box-left-buttom">
-          <b-button class="is-rounded" id="iconsLogo" tag="router-link" :to="{ path: '/noticias' }">
+          <b-button
+            class="is-rounded"
+            id="iconsLogo"
+            tag="router-link"
+            :to="{ path: '/noticias' }"
+          >
             <figure class="image is-32x32">
               <img src="https://i.ibb.co/xJzpY77/icono-Noticias-1.png" />
             </figure>
           </b-button>
         </div>
 
-        <div class="columns ">
+        <!-- Logo RetFocus -->
+        <div class="columns">
           <div id="logo">
             <figure class="image">
               <img
@@ -24,14 +30,20 @@
           </div>
         </div>
 
+        <!-- Boton de nuevoPost -->
         <div class="column" id="box-buttom">
-          <b-button class="is-rounded " id="iconsLogo" tag="router-link" :to="{ path: '/post-video' }" type="">
+          <b-button
+            class="is-rounded"
+            id="iconsLogo"
+            tag="router-link"
+            :to="{ path: '/post-video' }"
+            type=""
+          >
             <figure class="image is-24x24">
-              <img src="https://i.ibb.co/DKMghpg/istockphoto-611312994-170667a.png" />
+              <img src="https://i.ibb.co/DKMghpg/istockphoto-611312994-170667a.png"/>
             </figure>
           </b-button>
         </div>
-
       </div>
     </footer>
   </div>
@@ -48,36 +60,31 @@ export default {
   height: 60px;
 }
 
-#iconsLogo{
+#iconsLogo {
   padding-right: 5px;
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
-#imgLogo{
+#imgLogo {
   padding-left: 33px;
-    padding-right: 33px;
-    padding-top: 14px;
+  padding-right: 33px;
+  padding-top: 14px;
 }
 
-#box-buttom{
-    padding-right: 24px;
-    padding-top: 20px;
+#box-buttom {
+  padding-right: 24px;
+  padding-top: 20px;
 }
 
-#box-left-buttom{
-
-    padding-left: 24px;
-    padding-top: 20px;
-
+#box-left-buttom {
+  padding-left: 24px;
+  padding-top: 20px;
 }
 
 #footer {
   width: 100%;
   height: 100%;
-
-    height: 60px;
-    top: 0px;
-
-  /* bottom: 0; */
+  height: 60px;
+  top: 0px;
 }
 </style>
